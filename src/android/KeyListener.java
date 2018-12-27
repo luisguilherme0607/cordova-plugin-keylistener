@@ -54,6 +54,19 @@ public class KeyListener extends CordovaPlugin implements KeyEvent.Callback  {
 		return false;
 	}
 
+	public boolean onKeyMultiple(int keyCode, int count, KeyEvent event){
+		return true;
+	}
+
+	public boolean onKeyLongPress(int keyCode, KeyEvent event){
+		return true;
+	}
+
+
+	public boolean onKeyUp(int keyCode, KeyEvent event){
+		return true;
+	}
+
 /*
     public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
 		// Check if the event is equal to KEY_DOWN
