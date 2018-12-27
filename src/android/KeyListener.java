@@ -39,7 +39,7 @@ public class KeyListener extends CordovaPlugin implements KeyEvent.Callback  {
         if(action.equals("stopListening")){
 
             this.buttonCallbackContext= null;
-			this.webView.getView().setOnKeyListener(null);
+			//this.webView.getView().setOnKeyListener(null);
             callbackContext.success();
 
             return true;
