@@ -11,10 +11,10 @@ import org.json.JSONObject;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnKeyListener;
-
+import android.view.KeyEvent.Callback;
 import android.content.Context;
 
-public class KeyListener extends CordovaPlugin implements OnKeyListener  {
+public class KeyListener extends CordovaPlugin implements KeyEvent.Callback  {
 
     private CallbackContext buttonCallbackContext;
   
@@ -46,9 +46,15 @@ public class KeyListener extends CordovaPlugin implements OnKeyListener  {
         }
         return false;
 
-    }
+	}
+	
+	public boolean onKeyDown(int keyCode, KeyEvent event){
 
+		Toast.makeText(cordova.getActivity(), keyCode, Toast.LENGTH_LONG ).show();
+		return false;
+	}
 
+/*
     public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
 		// Check if the event is equal to KEY_DOWN
 		if( keyEvent.getAction() == KeyEvent.ACTION_DOWN )
@@ -98,12 +104,12 @@ public class KeyListener extends CordovaPlugin implements OnKeyListener  {
 			}else{
 				Log.d(LOG, "Unmapped key received: "+keyCode);
             }
-            */
 		}
-
+		
 		return false;
 	}
-
+	*/
+	
 
 }
 
