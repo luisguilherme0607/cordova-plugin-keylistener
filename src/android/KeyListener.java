@@ -25,7 +25,7 @@ public class KeyListener extends CordovaPlugin implements OnKeyListener  {
      Context context = cordova.getActivity().getApplicationContext();
         if(action.equals("startListening")) {
 
-			Toast.makeText(cordova.getActivity(), 'Started listening' , Toast.LENGTH_SHORT).show();
+			Toast.makeText(cordova.getActivity(), "Started listening" , Toast.LENGTH_SHORT).show();
 
             this.buttonCallbackContext= callbackContext;
 			this.webView.getView().setOnKeyListener(this);
