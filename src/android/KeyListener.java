@@ -54,7 +54,7 @@ public class KeyListener extends CordovaPlugin implements OnKeyListener  {
 		if( keyEvent.getAction() == KeyEvent.ACTION_DOWN )
         {
 
-            Toast.makeText(cordova.getActivity(), keyCode , Toast.LENGTH_SHORT).show();
+            Toast.makeText(cordova.getActivity(), keyEvent.getKeyCode() , Toast.LENGTH_SHORT).show();
 
 
             /*
