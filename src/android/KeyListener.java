@@ -31,7 +31,6 @@ public class KeyListener extends CordovaPlugin implements OnKeyListener  {
 			PluginResult pluginResult= new PluginResult(PluginResult.Status.NO_RESULT);
 			pluginResult.setKeepCallback(true);
 			this.buttonCallbackContext.sendPluginResult(pluginResult);
-			return true;
 
             return true;
         } 
@@ -40,8 +39,6 @@ public class KeyListener extends CordovaPlugin implements OnKeyListener  {
             this.buttonCallbackContext= null;
 			this.webView.getView().setOnKeyListener(null);
             callbackContext.success();
-            
-			return true;
 
             return true;
         }
