@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-keylistener",
+  "version": "0.0.1",
+  "description": "An Android Cordova plugin to check button inputs.",
+  "cordova": {
+    "id": "cordova-plugin-keylistener",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisguilherme0607/cordova-plugin-keylistener.git"
+  },
+  "keywords": [
+    "Toast",
+    "Notification",
+    "Message",
+    "Alert",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Luis Guilherme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisguilherme0607/cordova-plugin-keylistener/issues" 
+  },
+  "homepage": "https://github.com/luisguilherme0607/cordova-plugin-keylistener/"
+}

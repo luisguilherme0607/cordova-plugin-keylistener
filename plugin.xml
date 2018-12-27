@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-keylistener" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>KeyListener</name>
+
+    <repo>https://github.com/luisguilherme0607/cordova-plugin-keylistener.git</repo>
+    <issue>https://github.com/luisguilherme0607/cordova-plugin-keylistener/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+
+    <js-module name="KeyListener" src="www/KeyListener.js">
+        <clobbers target="cordova.plugins.KeyListener" />
+    </js-module>
+
+
+     <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="KeyListener">
+                <param name="android-package" value="com.bool.cordova.plugin.KeyListener"/>
+            </feature>
+        </config-file>
+
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+
+        <source-file src="src/android/KeyListener.java" target-dir="src/com/bool/cordova/plugin" />
+
+    </platform>
+
+
+
+</plugin>
