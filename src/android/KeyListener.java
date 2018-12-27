@@ -28,7 +28,7 @@ public class KeyListener extends CordovaPlugin implements KeyEvent.Callback  {
 			Toast.makeText(cordova.getActivity(), "Started listening" , Toast.LENGTH_SHORT).show();
 
             this.buttonCallbackContext= callbackContext;
-			this.webView.getView().setOnKeyListener(this);
+			//this.webView.getView().setOnKeyListener(this);
 
 			PluginResult pluginResult= new PluginResult(PluginResult.Status.NO_RESULT);
 			pluginResult.setKeepCallback(true);
